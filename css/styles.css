@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height:100vh;
+    width:100vw;    
+}
+body{
+
+
+
+    background-image: url('../img/barbecue.jpg');
+    background-size: 60%;
+}
+.container{
+    width: 50%;
+    height:100%;    
+    display: flex;
+    background-color: rgb(206, 39, 39);
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    min-width: 350px;
+}
+
+.input-group{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap:10px;   
+    padding:25px;
+    height:100%;
+    width: 60%;
+    background-color: azure;
+    min-width: 280px;
+    
+
+}
+.input-group img{
+    width: 80px;
+    
+}
+.input-group h1{
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.input-group h1 sup{
+    color:rgb(206, 39, 39);
+}
+input,button{
+    width:100%;
+    padding:10px;
+    text-align:center;
+
+}
+button{
+    font-weight:bold; 
+    border-radius: 15px;
+    border:none;
+    box-shadow: none;
+    background-color: rgb(51, 185, 51);
+    color:#fff;
+    font-size: 16px;
+}
+button:hover{
+    cursor:pointer;
+    color:rgb(51, 185, 51);
+    background:#fff;
+    border: 1px rgb(51, 185, 51) solid;
+    transition: 300ms;
+    font-size:18px ;
+}
+.result{
+    display:flex;
+    width:100%;
+    height:60%;
+}
+
+h3{
+    margin:auto;
+    font-family: 'Teko', sans-serif;
+    font-size:30px;
+    font-weight: 300;
+}
+ h3 strong{
+    color:rgb(206, 39, 39);
+}
+.result ul li{
+    display:flex;
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+.result img{
+    width: 250px;
+    background:rgb(51, 185, 51);;
+    border-radius: 70%;
+    margin:auto;
+}
+.result ul li img{
+    width:50px;
+    display:inline;
+    float:left;
+    margin:0;
+    margin-right: 10px;
+}
+ul{
+    transition:500ms;
+
+}
+@media (max-width:1320px){
+    .container{
+        width: 60%;
+        height:100%;
+    }
+
+     .input-group{
+         height:100%;
+         width: 80%;
+     }
+ }
+
+@media (max-width:839px) {
+   .container{
+       width: 80%;
+   }
+    .input-group{
+        height:100%;
+        width: 85%;
+        
+    }
+    .result{
+        padding:5px;
+    }
+}
+
+@media (max-width:560px){
+    .container{
+        width: 100%;
+    }
+
+}
+@media (max-width:500px){
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+     .input-group{
+         height:100%;
+         width: 100%;
+         
+     }
+}
+@media (max-width:400px){
+    body{
+        background:none;
+    }
+    .header>h1{
+        
+        margin-top: 15px;
+    }
+    .header h1 img{
+        width:70px;
+    }
+    .result{
+        padding:5px;
+    }
+}
